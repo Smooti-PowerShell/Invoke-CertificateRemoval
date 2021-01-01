@@ -22,7 +22,7 @@ $p12 = @(Get-ChildItem "$($Path)*.p12" -Recurse).FullName
 
 ForEach ($p in $pfx) {
     Try {
-        Remove-Item $p -Force
+        Remove-Item $p -Force -ErrorAction Stop
     }
     Catch {
         Write-Warning "Unable to remove '$($p)'"
@@ -31,7 +31,7 @@ ForEach ($p in $pfx) {
 
 ForEach ($p in $p12) {
     Try {
-        Remove-Item $p -Force
+        Remove-Item $p -Force -ErrorAction Stop
     }
     Catch {
         Write-Warning "Unable to remove '$($p)'"
