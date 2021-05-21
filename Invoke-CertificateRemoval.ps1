@@ -2,6 +2,10 @@
     .SYNOPSIS
         Removes all Software certificate installation files.
     .NOTES
+        Version:        1.0
+        Author:         Robert Owens
+        Creation Date:  12/31/2020
+        
         V-63393 - Software certificate installation files must be removed from a system.
 
         Description - Use of software certificates and their accompanying installation files
