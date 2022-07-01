@@ -24,16 +24,7 @@ Param(
 $pfx = @(Get-ChildItem "$($Path)*.pfx" -Recurse).FullName
 $p12 = @(Get-ChildItem "$($Path)*.p12" -Recurse).FullName
 
-ForEach ($p in $pfx) {
-    Try {
-        Remove-Item $p -Force -ErrorAction Stop
-    }
-    Catch {
-        Write-Warning "Unable to remove '$($p)'"
-    }
-}
-
-ForEach ($p in $p12) {
+ForEach ($p in @($pfx + $p12)) {
     Try {
         Remove-Item $p -Force -ErrorAction Stop
     }
