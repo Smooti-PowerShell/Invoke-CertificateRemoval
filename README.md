@@ -34,7 +34,7 @@
 <!-- ABOUT THE PROJECT -->
 
 ## Introduction
-V-63393 - Software certificate installation files must be removed from a system.
+[V-220723](https://www.stigviewer.com/stig/windows_10/2021-03-10/finding/V-220723) - Software certificate installation files must be removed from a system.
 
 Use of software certificates and their accompanying installation files
 for end users to access resources is less secure than the use of hardware-based certificates.
